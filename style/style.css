@@ -1,0 +1,15 @@
+header {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    background-color: darkslategrey;
+    border-radius: 15px;
+    border-bottom: 4px solid black;
+    font-family: Verdana, Tahoma, sans-serif;
+    
+}
+
+input {
+    background-color: rgba(255, 255, 0, 0.246);
+    margin-top: 25px;
+}
