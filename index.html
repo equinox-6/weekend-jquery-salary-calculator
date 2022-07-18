@@ -15,8 +15,10 @@
 
 <body>
     <header>Salary Calculator</header>
-  
-  <content id="EmployeeInfo">
+<content>
+
+  <div id="inputFields">
+    <h1>Add Employee</h1>
     <label for="firstName"></label>
     <input type="text" id="firstName" placeholder="First Name">
 
@@ -32,11 +34,17 @@
     <label for="firstName"></label>
     <input type="text" id="annualSalary" placeholder="Annual Salary">
 
-</content>
+    <button id="submitEmployee">Submit</button>
+</div>
 
-<button id="submitEmployee">Submit</button>
 
-<table>
+<table id="employeesInTable">
+    <div>
+        <h1>Employees</h1>
+    </div>
+
+    <tbody>
+        <!--row that states the header of the column-->
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
@@ -44,6 +52,7 @@
     <th>Job TItle</th>
     <th>Annual Salary</th>
   </tr>
+        <!--rows of employees entered into table-->
   <tr>
     <td></td>
     <td></td>
@@ -51,7 +60,11 @@
     <td></td>
     <td></td>
   </tr>
+  </tbody>
+  
 </table>
+</div>
+</content>
 
 </body>
 </html>
