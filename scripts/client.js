@@ -6,16 +6,19 @@ function readyNow (){
     console.log('ready now!'); 
 
     $('#employee-submit').on('click', addToTable);
-    
-    // $('#employee-submit').on('click', addAnnualSalary);
+    $('#')
 
-    $('#remove-Employee').on('click', removeEmployee);
+    $('#remove-employee').on('click', removeEmployee);
+
 }
 // -- End of ReadyNow! -- //
-
 console.log('End of client.js');
 
+
+
 const employee = []
+
+
 function addToTable() {
     console.log('Add To Table');
     let employeeFirstName = $('#firstName-input').val();
@@ -58,7 +61,7 @@ function displayEmployees(employeeInput) {
                 <td>${employee.lastName}</td>
                 <td>${employee.employeeID}</td>
                 <td>${employee.title}</td>
-                <td>${employee.annualSalary}</td>
+                <td id="sum">${employee.annualSalary}</td>
                 <td>
                     <button id="remove-Employee">Remove</button>
                 </td>
@@ -67,6 +70,19 @@ function displayEmployees(employeeInput) {
     }
 }
 
-function removeEmployee(){
-    $(this).parent().parent().remove();
+/**
+ * Remove employee from table
+ * @param {array} employeeTable employee
+ */
+
+function removeEmployee(employeeTable){
+$('#employee-table').remove();
+
+for(let employee of employeeTable){
+    $('employee-table').prepend(`
+    
+    <tr class="">
+
+`)
+}
 }
