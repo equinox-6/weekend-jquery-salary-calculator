@@ -16,54 +16,50 @@
 <body>
     <header>Salary Calculator</header>
 <content>
-
+    <!-- INPUT FIELDS -->
   <div id="inputFields">
-    <h1>Add Employee</h1>
-    <label for="firstName"></label>
-    <input type="text" id="firstName" placeholder="First Name">
+    <h2>Add Employee</h2>
+    <label for="firstName-input"></label>
+    <input type="text" id="firstName-input" placeholder="First Name">
 
-    <label for="lastName"></label>
-    <input type="text" id="lastName" placeholder="Last Name">
+    <label for="lastName-input"></label>
+    <input type="text" id="lastName-input" placeholder="Last Name">
 
-    <label for="employeeID"></label>
-    <input type="text" id="employeeID" placeholder="Employee ID">
+    <label for="employeeID-input"></label>
+    <input type="text" id="employeeID-input" placeholder="Employee ID">
 
-    <label for="jobTitle"></label>
-    <input type="text" id="jobTitle" placeholder="Job Title">
+    <label for="jobTitle-input"></label>
+    <input type="text" id="jobTitle-input" placeholder="Job Title">
 
-    <label for="firstName"></label>
-    <input type="text" id="annualSalary" placeholder="Annual Salary">
+    <label for="annualSalary-input"></label>
+    <input type="text" id="annualSalary-input" placeholder="Annual Salary">
 
-    <button id="submitEmployee">Submit</button>
+    <button id="employee-submit">Add Employee</button>
 </div>
 
-
-<table id="employeesInTable">
+    <!-- TABLE OF EMPLOYEES -->
+<table class="employeeTable">
     <div>
-        <h1>Employees</h1>
+        <h2>Employees</h2>
     </div>
-
-    <tbody>
         <!--row that states the header of the column-->
-  <tr>
+  <thead>
     <th>First Name</th>
     <th>Last Name</th>
     <th>Employee ID</th>
     <th>Job TItle</th>
     <th>Annual Salary</th>
-  </tr>
+  </thead>
         <!--rows of employees entered into table-->
-  <tr>
+  <tbody id="addEmployee">
     <td></td>
     <td></td>
     <td></td>
     <td></td>
     <td></td>
-  </tr>
   </tbody>
-  
-</table>
-</div>
+  </table>
+
 </content>
 
 </body>
