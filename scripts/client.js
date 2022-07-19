@@ -24,7 +24,7 @@ function addToTable() {
     let addEmployeeToTable = {
         firstName: employeeFirstName,
         lastName: employeeLastName,
-        ID: employeeID,
+        employeeID: employeeID,
         title: employeeJobTitle,
         annualSalary: employeeAnnualSalary
     }
@@ -38,6 +38,22 @@ function addToTable() {
     $('input').val('');
 }
 
-function displayEmployees() {
-    
+/**
+ * display the employee in the table
+ * @param {Array} employeeInput employees
+ */
+function displayEmployees(employeeInput ) {
+    $('#employee-table').empty();
+
+    for(let employee of employeeInput){
+        $('#employee-table').append(`
+            <tr class="">
+                <td>${employee.firstName}</td>
+                <td>${employee.lastName}</td>
+                <td>${employee.employeeID}</td>
+                <td>${employee.title}</td>
+                <td>${employee.annualSalary}</td>
+            </tr>
+        `)
+    }
 }
