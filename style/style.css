@@ -14,7 +14,7 @@ input {
     background-color: rgba(255, 255, 0, 0.246);
 }
 
-.employesInTable, th, td {
+.employeeTable, th, td {
     background-color: lightsalmon;
     border: 2px solid black;
 }
