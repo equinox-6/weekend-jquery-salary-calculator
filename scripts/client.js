@@ -6,7 +6,8 @@ function readyNow (){
     console.log('ready now!'); 
 
     $('#employee-submit').on('click', addToTable);
-    $('#')
+
+    
 
     $('#remove-employee').on('click', removeEmployee);
 
@@ -85,4 +86,8 @@ for(let employee of employeeTable){
 
 `)
 }
+}
+
+function annualSalary(){
+    
 }
