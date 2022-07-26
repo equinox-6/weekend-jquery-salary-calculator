@@ -88,6 +88,6 @@ for(let employee of employeeTable){
 }
 }
 
-function annualSalary(){
+// function annualSalary(){
     
-}
+// }
